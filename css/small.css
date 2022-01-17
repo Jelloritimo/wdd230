@@ -3,7 +3,7 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    background-color: #4D9078;
+    background-color: #437a67;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   header img{
@@ -37,7 +37,7 @@ header {
   }
   footer {
     text-align: center;
-    background-color: #4D9078;
+    background-color: #437a67;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #footer-p-1 {
@@ -45,6 +45,6 @@ header {
     padding-top: 10px;
   }
   #footer-p-2 {
-    color: #F2C14E;
+    color: #ffb916;
     padding-bottom: 10px;
   }
