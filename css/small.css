@@ -1,0 +1,50 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #4D9078;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  header img{
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  h1 {
+    font-family: "Courier new", monospace;
+    color: white;
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-family: "Courier new", monospace;
+    border-bottom : 2px solid #cccccc;
+    font-size: 1rem;
+  }
+  li {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+  }
+  p {
+    font-family: Arial, sans-serif;
+  }
+  main p {
+    font-style: italic;
+    border-top: 2px solid #cccccc;
+    font-size: 11pt;
+    color: grey;
+  }
+  footer {
+    text-align: center;
+    background-color: #4D9078;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #footer-p-1 {
+    color: white;
+    padding-top: 10px;
+  }
+  #footer-p-2 {
+    color: #F2C14E;
+    padding-bottom: 10px;
+  }
