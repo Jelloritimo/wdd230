@@ -39,6 +39,7 @@ nav ul li {
     max-width: 10%;
 }
 footer{
+	font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: #ff6663ff;
     color: white;
