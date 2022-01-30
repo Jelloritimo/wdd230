@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32rem) {
+
+nav button{
+    display: none;
+}
+
+nav ul#navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6663ff;
+    margin: 0 auto;
+}
+nav ul.open{
+    display: flex;
+}
+.mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#spot3 {
+    grid-column: 1/-1;
+}
+
+}
