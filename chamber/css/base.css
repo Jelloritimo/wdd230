@@ -42,7 +42,7 @@ nav button:hover{
 	color: #fff;
 }
 nav {
-    background-color: #ff6663ff;
+    background-color: rgb(255, 71, 68);
 }
 nav ul li a {
 	display: block;
@@ -70,8 +70,8 @@ nav ul.open{
     display: block;
 }
 main p {
-    background-color: rgb(255, 102, 99, 0.3);
-    border: 1px solid rgb(255, 102, 99, 0.8);
+    background-color: rgb(255, 71, 68, 0.3);
+    border: 1px solid rgb(255, 71, 68, 0.8);
     color: rgb(80, 80, 80);
     height: 200px;
 }
@@ -84,7 +84,7 @@ main p {
 footer{
     display: flex;
     text-align: center;
-    background-color: #ff6663ff;
+    background-color: rgb(255, 71, 68);
     color: white;
     padding: 10px;
     margin-top: 10px;
