@@ -80,6 +80,19 @@ nav ul.open{
     object-fit: cover;
 }
 
+/* news */
+.news{
+    box-shadow: 0 0 8px gray;
+}
+.news h1{
+    color:#fff;
+    background-color: rgb(179,3,0);
+    padding: 10px;
+}
+.news p{
+    margin-left: 10px;
+}
+
 /* spot 1 */
 
 .job-fair{
@@ -132,17 +145,52 @@ nav ul.open{
 }
 
 /* join */
-
+.join{
+    display: flex;
+    margin: 10px;
+}
 .join img{
     max-width: 100%;
     max-height: 100%;
 }
+.join div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.join div button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* event */
 
+.event{
+    box-shadow: 0 0 8px gray;
+    background-color: rgb(241, 241, 241);
+}
+.event h1{
+    margin-top: 0px;
+    color:#fff;
+    background-color: rgb(179,3,0);
+    padding: 10px;
+}
 .event img{
     max-width: 100%;
     max-height: 200px;
+}
+
+/* weather */
+
+.weather{
+    box-shadow: 0 0 8px gray;
+    background-color: rgba(179,3,0, 0.2);
+}
+.weather h1{
+    color:#fff;
+    background-color: rgb(127, 124, 175);
+    padding: 10px;
+    margin-top: 0px;
 }
 
 /* bottom image */
