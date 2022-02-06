@@ -91,6 +91,7 @@ nav ul.open{
 }
 .news p{
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 
 /* spot 1 */
@@ -109,6 +110,9 @@ nav ul.open{
     margin-left: auto;
     margin-right: auto;
 }
+.job-fair p{
+    margin-left: 10px;
+}
 
 /* spot 2 */
 
@@ -126,6 +130,9 @@ nav ul.open{
     margin-left: auto;
     margin-right: auto;
 }
+.finance p{
+    margin-left: 10px;
+}
 
 /* spot 3 */
 
@@ -142,6 +149,9 @@ nav ul.open{
     max-height: 40%;
     margin-left: auto;
     margin-right: auto;
+}
+.security p{
+    margin-left: 10px;
 }
 
 /* join */
@@ -161,6 +171,44 @@ nav ul.open{
     display: block;
     margin-right: auto;
     margin-left: auto;
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.join div button:hover {
+  background-color: #2c974b;
+}
+
+.join div button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.join div button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.join div button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
 /* event */
@@ -176,8 +224,14 @@ nav ul.open{
     padding: 10px;
 }
 .event img{
+    float:left;
     max-width: 100%;
     max-height: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.event p{
+    margin-left: 10px;
 }
 
 /* weather */
@@ -186,11 +240,23 @@ nav ul.open{
     box-shadow: 0 0 8px gray;
     background-color: rgba(179,3,0, 0.2);
 }
+.weather div{
+    display: flex;
+    padding-left: auto;
+    padding-right: auto;
+}
 .weather h1{
     color:#fff;
     background-color: rgb(127, 124, 175);
     padding: 10px;
     margin-top: 0px;
+}
+.weather img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.weather h2{
+    font-weight: bold;
 }
 
 /* bottom image */
