@@ -75,38 +75,66 @@ nav ul.open{
     max-width: 100%;
     height: auto;
 }
+
+/* spot 1 */
+
+.job-fair{
+    border-left: 10px solid rgb(11, 58, 86);
+    background-color: rgba(11, 58, 86, 0.2);
+}
+
 .job-fair img{
     max-width: 100%;
     max-height: 40%;
+    margin-left: 20px;
+}
+
+/* spot 2 */
+
+.finance{
+    border-left: 10px solid rgb(127, 124, 175);
+    background-color: rgba(127, 124, 175, 0.2);
 }
 .finance img{
     max-width: 100%;
     max-height: 40%;
 }
+
+/* spot 3 */
+
+.security{
+    border-left: 10px solid rgb(176, 34, 140);
+    background-color: rgba(176, 34, 140, 0.2);
+}
 .security img{
     max-width: 100%;
     max-height: 40%;
 }
+
+/* join */
+
 .join img{
     max-width: 100%;
     max-height: 100%;
 }
 
+/* event */
+
 .event img{
     max-width: 100%;
     max-height: 200px;
 }
+
+/* bottom image */
+
 #bottom_img{
     max-width: 100%;
     height: auto;
     padding-bottom: none;
 }
-#palette {
-    max-width: 80%;
-}
-#tanaka, #zimmer {
-    max-width: 10%;
-}
+
+/* footer */
+
 footer{
     display: flex;
     text-align: center;
