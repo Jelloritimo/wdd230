@@ -73,11 +73,20 @@ nav ul.open{
 
 /* top image */
 
+.hero{
+    position:relative;
+}
 .hero img{
     display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+.hero h1{
+    position:relative;
+}
+.hero button{
+    position: relative;
 }
 
 /* news */
@@ -162,7 +171,7 @@ nav ul.open{
 }
 .join img{
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
 }
 .join div{
     margin-top: auto;
@@ -215,9 +224,14 @@ nav ul.open{
 /* event */
 
 .event{
+    width: 100%;
     box-shadow: 0 0 8px gray;
     background-color: rgb(241, 241, 241);
 }
+/* .event-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
 .event h1{
     margin-top: 0px;
     color:#fff;
@@ -226,8 +240,7 @@ nav ul.open{
 }
 .event img{
     float:left;
-    max-width: 100%;
-    max-height: 200px;
+    width: 80%;
     margin-left: 10px;
     margin-bottom: 10px;
 }
