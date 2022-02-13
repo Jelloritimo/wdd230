@@ -87,6 +87,41 @@ nav ul.open{
 }
 .hero button{
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+}
+
+.hero button:hover{
+    background-color: #2c974b;
+}
+
+.hero button:focus{
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.hero button:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+.hero button:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
 /* news */
@@ -195,11 +230,6 @@ nav ul.open{
     padding: 6px 16px;
 }
 
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
 .join div button:hover {
   background-color: #2c974b;
 }
@@ -224,14 +254,13 @@ nav ul.open{
 /* event */
 
 .event{
-    width: 100%;
     box-shadow: 0 0 8px gray;
     background-color: rgb(241, 241, 241);
 }
-/* .event-content{
+.event-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-} */
+}
 .event h1{
     margin-top: 0px;
     color:#fff;
@@ -239,13 +268,14 @@ nav ul.open{
     padding: 10px;
 }
 .event img{
-    float:left;
-    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 10px;
     margin-bottom: 10px;
 }
 .event p{
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* weather */
@@ -254,7 +284,14 @@ nav ul.open{
     box-shadow: 0 0 8px gray;
     background-color: rgba(179,3,0, 0.2);
 }
-.weather div{
+.weather-top{
+    display: flex;
+    justify-content: center;
+}
+.weather-bottom{
+    text-align: center;
+}
+.wind-speed, .wind-chill{
     display: flex;
     justify-content: center;
 }
