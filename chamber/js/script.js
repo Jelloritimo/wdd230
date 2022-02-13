@@ -26,7 +26,9 @@ function headerDate(){
     if (day == 1 || day == 2){
         headerDateBox.append(requestedFormat.format(Date.now()));
     }
-    
+    else{
+        headerDateBox.classList.add("hide");
+    }
 }
 
 function toggleMenu(){
