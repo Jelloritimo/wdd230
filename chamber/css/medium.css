@@ -34,6 +34,13 @@ nav ul.open{
 	transform: scale(1.1);
 }
 
+.discover h3{
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+
 .secondrow{
     display: grid;
     grid-template-columns: 1fr 1fr;
