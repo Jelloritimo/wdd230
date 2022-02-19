@@ -21,4 +21,29 @@ nav ul.open{
     grid-column: 1/-1;
 }
 
+/* Discover */
+.discover picture img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.discover picture img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.secondrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.sixthrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
 }
