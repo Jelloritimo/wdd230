@@ -344,6 +344,33 @@ footer p {
     font-weight: bold;
 }
 
+/* HIDE */
+.hide {
+    display: none;
+}
+
+/* Discover page */
+#discover-banner{
+    background-color: rgb(11, 58, 86);
+    color: #fff;
+    padding: 10px;
+}
+
+.discover picture img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Lazy load */
+.discover picture img[data-src] {
+    filter: blur(0.2em);
+}
+    
+.discover picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
 
 /* x button magic */
 #hamburgerBtn span:nth-child(1){display: block;} /*display hamburgerBtn(the first span child) as block*/
