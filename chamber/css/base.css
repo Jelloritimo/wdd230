@@ -363,14 +363,6 @@ footer p {
 }
 
 /* Lazy load */
-.discover picture img[data-src] {
-    filter: blur(0.2em);
-}
-    
-.discover picture img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
 
 /* x button magic */
 #hamburgerBtn span:nth-child(1){display: block;} /*display hamburgerBtn(the first span child) as block*/
