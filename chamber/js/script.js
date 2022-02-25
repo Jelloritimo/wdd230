@@ -58,10 +58,10 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             return;
         } else {
             preloadImage(entry.target);
-            imgObserver.unobserve(entry.target)
+            imgObserver.unobserve(entry.target);
         }
-    })
-}, imgOptions)
+    });
+}, imgOptions);
 
 images.forEach(image => {
     imgObserver.observe(image);
@@ -95,6 +95,10 @@ else {
 // numVisits++;
 // localStorage.setItem("visits-ls", numVisits);
 localStorage.setItem("visitUpdate", d.getTime());
+
+// Form page hidden date
+let formVisit = document.getElementById("formvisit");
+formVisit.textContent = `Visited this form on: ${requestedFormat.format(Date.now())}`;
 
 // Hamburger Button
 
