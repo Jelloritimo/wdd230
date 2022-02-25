@@ -28,6 +28,10 @@ tbody tr:nth-child(even) {
 	background-color: var(--zebra);
 }
 
+#row7col1{
+    font-style: italic;
+}
+
 #row6col3, tfoot {
     background-color: var(--head1);
     color:#fff;
