@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tokyo-Bay Chamber of Commerce</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/chamber_icon.ico">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="social">
+                <img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="header logo">
+                <h2 id="display-date"></h2>
+                <h3 id="meetgreet"></h3>
+                <h3 id="daycount"></h3>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="navigation">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="typography.html">Directory</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainform">
+            <form action="thankyou.html">
+                <label for="fname">Frist Name: </label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="fname" required>
+                <label for="biz-pos">Business Position Title: </label>
+                <input type="text" id="biz-pos" name="biz-pos" pattern="*[A-Z] [a-z]-{7}">
+                <label for="email">Email address: </label>
+		        <input type="text" id="email" name="email" required>
+                <label for="tel">Phone number: </label>
+		        <input type="tel" id="tel" name="tel" required>
+                <label for="biz-name">Business Name: </label>
+                <input type="text" id="biz-name" name="biz-name" required>
+                <p>Membership Level: </p>
+                <div>
+                    <input type="radio" id="np" name="membership" value="NP">
+                    <label for="np">NP Membership (for non profit organizations and there is no fee)</label><br>
+                    <input type="radio" id="bronze" name="membership" value="Bronze">
+                    <label for="bronze">Bronze Membership</label><br>
+                    <input type="radio" id="silver" name="membership" value="Silver">
+                    <label for="silver">Silver Membership</label><br>
+                    <input type="radio" id="gold" name="membership" value="Gold">
+                    <label for="gold">Gold Membership</label><br>
+                </div>
+                <label for="description">Business Description: </label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <p id="formvisit" hidden></p>
+                <button id="submit">Submit</button>
+
+            </form>
+        </main>
+        <footer>
+            <img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="footer logo">
+            <p id="footer-p-1"></p>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/windchill.js"></script>
+    </body>
+</html>
