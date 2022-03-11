@@ -53,4 +53,8 @@ nav ul.open{
     gap: 5px;
 }
 
+/* Directory Page */
+.cards img{
+    display: block;
+}
 }
