@@ -2,6 +2,7 @@
 
 const cards = document.querySelector('.cards');
 const requestURL = "https://jelloritimo.github.io/wdd230/chamber/data.json";
+var zebraCount = 0;
 
 fetch(requestURL)
     .then(function (response){
@@ -11,6 +12,7 @@ fetch(requestURL)
         console.table(jsonObject);
         const companies = jsonObject["companies"];
         companies.forEach(displayCompanies);
+        console.log(companies[0]);
     });
 
 function displayCompanies(company) {
@@ -26,14 +28,20 @@ function displayCompanies(company) {
     cphone.textContent = `${company.phone}`;
     cwebsite.textContent = `${company.website}`;
 
+    cwebsite.setAttribute("href", company.website);
     cimage.setAttribute("src", company.image);
     cimage.setAttribute('loading', 'lazy');
 
+    card.appendChild(cimage);
     card.appendChild(cname);
     card.appendChild(caddress);
     card.appendChild(cphone);
     card.appendChild(cwebsite);
-    card.appendChild(cimage);
 
     document.querySelector('div.cards').appendChild(card);
+
+    if (zebraCount % 2 !== 0) {
+        card.setAttribute("class", "zebra");
+    }
+    zebraCount++;
     }
