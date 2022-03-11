@@ -97,8 +97,8 @@ else {
 localStorage.setItem("visitUpdate", d.getTime());
 
 // Form page hidden date
-let formVisit = document.getElementById("formvisit");
-formVisit.textContent = `Visited this form on: ${requestedFormat.format(Date.now())}`;
+// let formVisit = document.getElementById("formvisit");
+// formVisit.textContent = `Visited this form on: ${requestedFormat.format(Date.now())}`;
 
 // Hamburger Button
 
@@ -110,55 +110,3 @@ function toggleMenu(){
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu; //When user clicks x(hamburgerBtn)...
 
-// Directory JSON
-
-const cards = document.querySelector('.cards');
-
-fetch("data.json")
-    .then(function (response){
-        return response.json();
-    })
-    .then(function(json){
-        console.log(json);
-        const companies = jsonObject["companies"];
-        companies.forEach(displayCompanies);
-    });
-// $.getJSON("data.json", function(json){
-//     console.log(json);
-//     console.table(json); 
-//     const companies = json["companies"];
-//     companies.forEach(displayCompanies);
-// });
-// fetch(requestURL)
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (jsonObject) {
-//     console.table(jsonObject);  // temporary checking for valid response and data parsing
-//     const companies = jsonObject["companies"];
-//     companies.forEach(displayCompanies);
-//   });
-
-function displayCompanies(company) {
-    let card = document.createElement('section');
-    let cname = document.createElement('p');
-    let caddress = document.createElement('p');
-    let cphone = document.createElement('p');
-    let cwebsite = document.createElement('a');
-    let cimage = document.createElement('img');
-
-    cname.textContent = `${company.name}`;
-    caddress.textContent = `${company.address}`;
-    cphone.textContent = `${company.phone}`;
-    cwebsite.textContent = `${company.website}`;
-
-    cimage.setAttribute('loading', 'lazy');
-
-    card.appendChild(cname);
-    card.appendChild(caddress);
-    card.appendChild(cphone);
-    card.appendChild(cwebsite);
-    card.appendChild(cimage);
-
-    document.querySelector('div.cards').appendChild(card);
-    }
