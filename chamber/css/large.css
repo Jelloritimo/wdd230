@@ -19,4 +19,9 @@ nav ul li a{
     grid-gap: 20px;
     margin-bottom: 10px;
 }
+
+/* Directory Page */
+.galleryList {
+    display: none;
+}
 }
