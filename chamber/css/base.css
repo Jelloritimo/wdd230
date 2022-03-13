@@ -415,6 +415,8 @@ form button{
 }
 .galleryList button{
     margin:10px;
+    border: thin solid rgb(179,3,0);
+    border-radius: 5px;
 }
 .galleryList button i{
     margin:5px;
@@ -430,8 +432,12 @@ form button{
     margin:10px;
     margin-right: 20px;
     border-radius: 15%;
-    background-color: #fff;
     color: rgb(179,3,0);
+}
+.pressed-directory-btn{
+    background-color: rgb(179,3,0,0.3);
+    border: thin solid rgb(179,3,0);
+    border-radius: 5px;
 }
 .zebra{
     background-color: rgb(179,3,0,0.1);
@@ -443,9 +449,10 @@ form button{
     max-width: 80%;
     max-height: 80%;
 }
-.cards section{
+.cards .cardDesign{
     text-align: center;
     margin: 0;
+    box-shadow: 0px 5px 5px #888;
 }
 
 /* x button magic */
