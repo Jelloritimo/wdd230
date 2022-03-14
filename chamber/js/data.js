@@ -4,6 +4,7 @@ const cards = document.querySelector('.cards');
 const requestURL = "https://jelloritimo.github.io/wdd230/chamber/data.json";
 var zebraCount = 0;
 
+
 fetch(requestURL)
     .then(function (response){
         return response.json();
@@ -48,37 +49,30 @@ function displayCompanies(company) {
         card.setAttribute("class", "zebra");
     }
     zebraCount++;
+}
 
+let cardo = document.getElementsByTagName('section');
 
-    function toggleGallery(){
-        document.getElementById("galleryBtn").classList.add("pressed-directory-btn");
-        document.getElementById("listBtn").classList.remove("pressed-directory-btn");
-        document.getElementById("cimage").classList.remove("hide");
-        document.getElementById("cname").classList.add("hide");
-        document.getElementById("gallery").classList.add("cardDesign");
-    }
-    function toggleList(){
-        document.getElementById("galleryBtn").classList.remove("pressed-directory-btn");
-        document.getElementById("listBtn").classList.add("pressed-directory-btn");
-        document.getElementById("cimage").classList.add("hide");
-        document.getElementById("cname").classList.remove("hide");
-        document.getElementById("gallery").classList.remove("cardDesign");
-    }
-    const galleryBtn = document.getElementById("galleryBtn");
-    const listBtn = document.getElementById("listBtn");
-    galleryBtn.onclick = toggleGallery;
-    listBtn.onclick = toggleList;
+function toggleGallery(){
+    document.querySelectorAll("#galleryBtn").forEach(e => e.classList.add("pressed-directory-btn"));
+    document.querySelectorAll("#listBtn").forEach(e => e.classList.remove("pressed-directory-btn"));
+    document.querySelectorAll("#cimage").forEach(e => e.classList.remove("hide"));
+    document.querySelectorAll("#cname").forEach(e => e.classList.add("hide"));
+    document.querySelectorAll("#gallery").forEach(e => e.classList.add("cardDesign"));
+    document.querySelectorAll(".cards").forEach(e => e.classList.add("resize-gallery"));
+    document.querySelectorAll("#gallery").forEach(e => e.classList.remove("resize-list"));
+}
+function toggleList(){
+    document.querySelectorAll("#galleryBtn").forEach(e => e.classList.remove("pressed-directory-btn"));
+    document.querySelectorAll("#listBtn").forEach(e => e.classList.add("pressed-directory-btn"));
+    document.querySelectorAll("#cimage").forEach(e => e.classList.add("hide"));
+    document.querySelectorAll("#cname").forEach(e => e.classList.remove("hide"));
+    document.querySelectorAll("#gallery").forEach(e => e.classList.remove("cardDesign"));
+    document.querySelectorAll("#gallery").forEach(e => e.classList.add("resize-list"));
+    document.querySelectorAll(".cards").forEach(e => e.classList.remove("resize-gallery"));
+}
 
-    if (galleryBtn.onclick){
-        var elements = document.getElementsByTagName('section');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i] = toggleGallery;
-        }
-    }
-    else if (galleryBtn.onclick){
-        var elements = document.getElementsByTagName('section');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i] = toggleList;
-        }
-    }
-    }
+const galleryBtn = document.getElementById("galleryBtn");
+const listBtn = document.getElementById("listBtn");
+galleryBtn.onclick = toggleGallery;
+listBtn.onclick = toggleList;

@@ -24,4 +24,8 @@ nav ul li a{
 .galleryList {
     display: none;
 }
+
+.resize-gallery{
+    display: block;
+}
 }
