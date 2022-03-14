@@ -110,3 +110,19 @@ function toggleMenu(){
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu; //When user clicks x(hamburgerBtn)...
 
+// weather api
+const weatherAPI = "http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=b19cf87a8e1c71e3e589ab2bc67cc544";
+
+fetch(weatherAPI)
+.then((response) => response.json())
+.then((jsObject) => {
+    console.log(jsObject);
+    document.querySelector('#temperature').textContent = jsObject.main.temp;
+    const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    const desc = jsObject.weather[0].description;
+    document.querySelector('#weathericon').setAttribute('src', iconsrc);
+    document.querySelector('#weathericon').setAttribute('alt', desc);
+    document.querySelector(".weather-condition").textContent = jsObject.weather[0].description;
+    document.querySelector("#current-speed").textContent = jsObject.wind.speed;
+})
+
