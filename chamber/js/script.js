@@ -112,7 +112,7 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu; //When user clicks x(hamburgerBtn)...
 
 // weather api
-const weatherAPI = "http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=b19cf87a8e1c71e3e589ab2bc67cc544";
+const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=b19cf87a8e1c71e3e589ab2bc67cc544";
 
 fetch(weatherAPI)
 .then((response) => response.json())
