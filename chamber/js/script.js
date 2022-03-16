@@ -32,6 +32,7 @@ function headerDate(){
     }
     else{
         headerDateBox.classList.add("hide");
+        meetGreet.classList.add("hide");
     }
 }
 

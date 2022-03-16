@@ -20,6 +20,10 @@ nav ul li a{
     margin-bottom: 10px;
 }
 
+footer{
+    display: flex;
+}
+
 /* Directory Page */
 .galleryList {
     display: none;

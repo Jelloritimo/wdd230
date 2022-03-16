@@ -9,17 +9,23 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="social">
-            <img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="header logo">
-            <h2 id="display-date"></h2>
-            <h3 id="meetgreet"></h3>
-            <h3 id="daycount"></h3>
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <div class="social-collapse">
+                <a href="index.html"><img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="header logo"></a>
+                <div class="date-related">
+                    <h2 id="display-date"></h2>
+                    <h3 id="meetgreet"></h3>
+                    <h3 id="daycount"></h3>
+                </div>
+                <div class="sns">
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -78,7 +84,7 @@
         </div>
     </main>
     <footer>
-        <img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="footer logo">
+        <a href="index.html"><img src="images/rsz_87baaf626bdb4d6b9e9e0c35df47980c.webp" alt="footer logo"></a>
         <p id="footer-p-1"></p>
     </footer>
     <script src="js/script.js"></script>
