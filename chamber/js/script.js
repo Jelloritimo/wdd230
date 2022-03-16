@@ -119,6 +119,7 @@ fetch(weatherAPI)
 .then((jsObject) => {
     console.log(jsObject);
     document.querySelector('#temperature').textContent = jsObject.main.temp;
+    console.log(document.querySelector('#temperature').textContent)
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
