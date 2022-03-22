@@ -50,8 +50,8 @@ function displayCompanies(company) {
     }
     zebraCount++;
 }
-
 let cardo = document.getElementsByTagName('section');
+onload.toggleGallery();
 
 function toggleGallery(){
     document.querySelectorAll("#galleryBtn").forEach(e => e.classList.add("pressed-directory-btn"));
