@@ -1,6 +1,5 @@
 // Directory JSON
 
-const cards = document.querySelector('.cards');
 const requestURL = "https://jelloritimo.github.io/wdd230/chamber/data.json";
 var zebraCount = 0;
 
@@ -29,7 +28,7 @@ function displayCompanies(company) {
     cphone.textContent = `${company.phone}`;
     cwebsite.textContent = `${company.website}`;
 
-    card.setAttribute("id", "gallery")
+    card.setAttribute("id", "gallery");
     cname.setAttribute("id", "cname");
     cwebsite.setAttribute("href", company.website);
     cimage.setAttribute("src", company.image);
@@ -50,8 +49,6 @@ function displayCompanies(company) {
     }
     zebraCount++;
 }
-let cardo = document.getElementsByTagName('section');
-onload.toggleGallery();
 
 function toggleGallery(){
     document.querySelectorAll("#galleryBtn").forEach(e => e.classList.add("pressed-directory-btn"));

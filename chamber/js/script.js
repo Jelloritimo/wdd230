@@ -119,12 +119,12 @@ fetch(weatherAPI)
 .then((jsObject) => {
     console.log(jsObject);
     document.querySelector('#temperature').textContent = jsObject.main.temp;
-    console.log(document.querySelector('#temperature').textContent)
+    console.log(document.querySelector('#temperature').textContent);
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#weathericon').setAttribute('alt', desc);
     document.querySelector(".weather-condition").textContent = jsObject.weather[0].description;
     document.querySelector("#current-speed").textContent = jsObject.wind.speed;
-})
+});
 

@@ -58,4 +58,15 @@ nav ul.open{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* Contacts Page */
+.contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    gap: 20px;
+}
+.address{
+    display: table-cell;
+    vertical-align: middle;
+}
 }
