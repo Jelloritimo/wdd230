@@ -445,6 +445,7 @@ form button{
     margin:10px;
     border: thin solid rgb(179,3,0);
     border-radius: 5px;
+    cursor: pointer;
 }
 .galleryList button i{
     margin:5px;
