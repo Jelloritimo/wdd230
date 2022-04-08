@@ -1,0 +1,88 @@
+{
+    "companies": [
+        {
+            "name": "Hirotsu Bioscience, Inc.",
+            "address": "〒102-0094 Tokyo, Chiyoda City, Kioicho, 4-1",
+            "phone": "N/A",
+            "website": "https://hbio.jp/",
+            "image": "https://hbio.jp/assets/img/og-image.png"
+        },
+        {
+            "name": "UPBOND, Inc.",
+            "address": "〒150-0001 Tokyo, Shibuya City, Jingūmae, 6-chōme-31-15",
+            "phone": "N/A",
+            "website": "https://www.upbond.io/",
+            "image": "https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=1440,dh=1440,da=l,ds=n,cc=FFFFFF)/assets/images/8459049/original/a1219b09-a0d7-46e7-9270-9f2a6e6e9d4a?1641448395"
+        },
+        {
+            "name": "ZenmuTech, Inc.",
+            "address": "〒104-0061 Tokyo, Chuo City, Ginza, 8 Chome-17-5",
+            "phone": "N/A",
+            "website": "https://www.zenmutech.com/",
+            "image": "https://www.atpress.ne.jp/releases/284375/logo_org.jpg"
+        },
+        {
+            "name": "GVA Tech, Inc.",
+            "address": "〒151-0051 Tokyo, Shibuya City, Sendagaya, 5 Chome-15-6",
+            "phone": "03-6274-8260",
+            "website": "https://gvatech.co.jp/",
+            "image": "https://storage.googleapis.com/studio-design-asset-files/projects/p6aopnZAWR/s-600x94_v-fs_webp_11221055-50ba-4bdf-8b4c-aefaf11452a8_small.webp"
+        },
+        {
+            "name": "AISing, Ltd.",
+            "address": "〒107-0052 Tokyo, Minato City, Akasaka, 6 Chome-19-45",
+            "phone": "03-6426-5224",
+            "website": "https://aising.jp/",
+            "image": "https://aising.jp/wp/wp-content/uploads/2020/03/aising_logo_02.jpg"
+        },
+        {
+            "name": "Creator's NEXT, Inc.",
+            "address": "〒108-0075 Tokyo, Minato City, Konan, 1 Chome-9-36",
+            "phone": "03-4405-0319",
+            "website": "https://cnxt.jp/",
+            "image": "https://cnxt.jp/wordpress/wp-content/themes/creators-next/img/cnxtlogo.gif"
+        },
+        {
+            "name": "Liquid Mine, Inc.",
+            "address": "〒108-0071 Tokyo, Minato City, Shirokanedai, 4 Chome-2-10",
+            "phone": "03-6416-4809",
+            "website": "http://www.liquidmine.co.jp/index.html",
+            "image": "https://japan.plugandplaytechcenter.com/apps/wp-content/uploads/06H_H_06_Liquid-Mine.png"
+        },
+        {
+            "name": "YOSHIDUMI HOLDINGS, Inc.",
+            "address": "〒100-0004 Tokyo, Chiyoda City, Otemachi, 2 Chome-6-2",
+            "phone": "N/A",
+            "website": "https://www.yoshidumi.com/",
+            "image": "https://prtimes.jp/data/corp/72690/tmp-d286a0f883b74015a8a95eaad5b45eb3-f5c722c2c1edae03fad962153923972c.jpg"
+        },
+        {
+            "name": "Arent, Inc.",
+            "address": "〒104-0032 Tokyo, Chuo City, Hatchobori, 2 Chome-10-7",
+            "phone": "03-6228-3393",
+            "website": "https://arent3d.com/",
+            "image": "https://d2v9k5u4v94ulw.cloudfront.net/assets/images/5156618/original/4b49c562-8c26-49cc-b874-7ee840ea5abe?1592201203"
+        },
+        {
+            "name": "Varinos, Inc.",
+            "address": "〒135-0064 Tokyo, Koto City, Aomi, 1 Chome-1-20",
+            "phone": "03-5422-6501",
+            "website": "https://varinos.com/",
+            "image": "data:image/png;base64,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"
+        },
+        {
+            "name": "FEELBEE, Inc.",
+            "address": "〒150-0042 Tokyo, Shibuya City, Udagawacho, 2 Chome-2-1",
+            "phone": "03-6416-3903",
+            "website": "https://feelbee.jp/",
+            "image": "https://www.feelbee.jp/cms/wp-content/uploads/2020/01/feelbee_logoImg.jpg"
+        },
+        {
+            "name": "Donuts, Co. Ltd.",
+            "address": "〒151-0053 Tokyo, Shibuya City, Yoyogi, 2 Chome-2-1",
+            "phone": "N/A",
+            "website": "https://www.donuts.ne.jp/#front-main",
+            "image": "https://www.famitsu.com/career/manage/wp-content/uploads/2020/05/donuts_logo_21.png"
+        }
+    ]
+}
