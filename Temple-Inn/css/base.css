@@ -86,15 +86,11 @@ nav ul.open{
     align-items: center;
     background-color: #F1DB4B;
 }
-/* .hero img{
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-} */
+
 .homeReserve h2{
     position:relative;
     margin: 20px;
+    text-align: center;
 }
 .homeReserve button{
     position: relative;
@@ -142,10 +138,17 @@ nav ul.open{
 .homeLocations{
     text-align: center;
     border-bottom: solid 4px rgb(167, 198, 218);
+    background-color: rgba(167, 198, 218, 0.4);
+    padding: 5px;
 }
 
 /* Announcements */
 
+.announce h1{
+    border-bottom: solid 3px rgb(158, 178, 93);
+    background-color: rgba(158, 178, 93, 0.4);
+    padding: 5px;
+}
 .announce ul{
     padding: 10px;
     border: double 2px #F1DB4B;
@@ -172,6 +175,9 @@ nav ul.open{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+.homeSignup:hover{
+    background-color: #eefcce;
 }
 .homeSignup div button{
     display: block;
@@ -289,21 +295,24 @@ footer{
 }
 footer a, footer img {
     max-width: 100%;
-    height: 100%;
+    height: 80px;
     border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 footer p {
     margin-left: 1rem;
     font-weight: bold;
 }
 
-.footerContent, .sns{
-    display: flex;
+.footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sns a{
-    display: block;
     text-align: center;
+    margin: 5px;
 }
 
 /* HIDE */
