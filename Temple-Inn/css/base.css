@@ -141,6 +141,17 @@ nav ul.open{
     background-color: rgba(167, 198, 218, 0.4);
     padding: 5px;
 }
+.locationInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.popular{
+    text-align: center;
+}
+.popular img{
+    max-width: 80%;
+    max-height: 80%;
+}
 
 /* Announcements */
 
@@ -218,38 +229,10 @@ nav ul.open{
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
-/* event */
-
-.event{
-    box-shadow: 0 0 8px gray;
-    background-color: rgb(241, 241, 241);
-}
-.event-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.event h1{
-    margin-top: 0px;
-    color:#fff;
-    background-color: rgb(179,3,0);
-    padding: 10px;
-}
-.event img{
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-.event p{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 /* weather */
 
 .weather{
     box-shadow: 0 0 8px gray;
-    background-color: rgba(179,3,0, 0.2);
 }
 .weather-top{
     display: flex;
@@ -263,10 +246,10 @@ nav ul.open{
     justify-content: center;
 }
 .weather h1{
-    color:#fff;
-    background-color: rgb(127, 124, 175);
+    text-align: center;
     padding: 10px;
     margin-top: 0px;
+    background-color: rgba(241, 219, 75);
 }
 
 #weathericon{
@@ -275,14 +258,6 @@ nav ul.open{
 }
 .weather h2{
     font-weight: bold;
-}
-
-/* bottom image */
-
-#bottom_img{
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 0px;
 }
 
 /* footer */
@@ -320,41 +295,9 @@ footer p {
     display: none;
 }
 
-/* Discover page */
-.discover picture img{
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.discover picture img:hover{
-    -webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-#discover-banner{
-    background-color: rgb(11, 58, 86);
-    color: #fff;
-    padding: 10px;
-}
-
-.discover picture img{
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-}
-.discover h3{
-    background-color: rgba(240, 240, 240, 0.8);
-    margin: 1em 3em;
-    padding: 1em;
-    text-align: center;
-}
-
 /* Lazy load */
 
-/* Join page */
+/* Reserve page */
 .mainform {
 	height: 100vh;
 	display: grid;
@@ -365,7 +308,7 @@ form{
     max-width: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(179,3,0, 0.3);
+    background-color: rgba(158, 178, 93, 0.3);
     padding: 20px;
     box-shadow: 5px 5px 10px rgb(128, 128, 128);
 }
@@ -393,54 +336,116 @@ form button{
     margin-top: 0px;
 }
 
-/* directory page */
+/* locations page */
 
-.galleryList{
-    color: rgb(179,3,0);
+.cards{
     text-align: center;
-    border-bottom: thin solid #888;
+    border-left: solid 50px rgb(167, 198, 218);
+    border-right: solid 50px rgb(167, 198, 218);
 }
-.galleryList button{
-    margin:10px;
-    border: thin solid rgb(179,3,0);
-    border-radius: 5px;
-    cursor: pointer;
-}
-.galleryList button i{
-    margin:5px;
-}
-
-.fa-th{
-    margin:10px;
-    margin-right: 20px;
-    border-radius: 15%;
-    color: rgb(179,3,0);
-}
-.fa-th-list{
-    margin:10px;
-    margin-right: 20px;
-    border-radius: 15%;
-    color: rgb(179,3,0);
-}
-.pressed-directory-btn{
-    background-color: rgb(179,3,0,0.3);
-    border: thin solid rgb(179,3,0);
-    border-radius: 5px;
-}
-.zebra{
-    background-color: rgb(179,3,0,0.1);
+.cards p:hover{
+    background-color: #eefcce;
 }
 .cards img{
-    padding-top: 10px;
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     max-height: 80%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-.cards .cardDesign{
+.cards img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.cards h2{
+    max-width: 100%;
+}
+
+/* services */
+.serviceLinks{
     text-align: center;
-    margin: 0;
-    box-shadow: 0px 5px 5px #888;
+}
+.serviceLinks img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.serviceLinks img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/* missionary page */
+.missionService{
+    background-color: rgba(167, 198, 218, 0.3);
+}
+.missionService h1{
+    text-align: center;
+    padding: 10px;
+}
+.suiteRoom img, .suiteService img, .studyRoom img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.suiteRoom, .suiteService, .studyRoom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.suiteRoom h2, .suiteService h2, .studyRoom h2{
+    align-self: center;
+}
+.missionService form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* wedding page */
+.weddingService{
+    background-color: #eefcce;
+}
+.weddingService h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.receptionHall img, .receptionFood img, .weddingCake img, .weddingSound img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10px;
+}
+.receptionHall, .receptionFood, .weddingCake, .weddingSound{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.receptionHall h2, .receptionFood h2, .weddingCake h2, .weddingSound h2{
+    align-self: center;
+}
+.weddingService form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* contact */
+#contactUs{
+    text-align: center;
+}
+.contacts{
+    text-align: center;
 }
 
 /* x button magic */

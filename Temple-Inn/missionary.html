@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/wide.css">
+    <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="headerLogo" href="index.html"><img src="image/logo.png" alt="Header Logo"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li class="active"><a href="reserve.html">Reserve</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="missionService">
+        <h1>Special Offers for Full-Time Missionaries</h1>
+        <div class="suiteRoom">
+            <h2>For all new/returning missionaries & temple missionaries, suite rooms are available with no charge</h2>
+            <img src="image/missionaryBed.jpg" alt="suite room">
+        </div>
+        <div class="suiteService">
+            <img src="image/suiteFood.jpg" alt="services">
+            <h2>Services include hotel buffet, usage of luggage lockers, a taxi to the mission house/airport</h2>
+        </div>
+        <div class="studyRoom">
+            <h2>Suite rooms come with premium study space</h2>
+            <img src="image/studyRoom.jpg" alt="suite study room">
+        </div>
+        <h1>Contact Us For Additional Information</h1>
+        <form action="contacted.html">
+            <label for="email">Email address: </label>
+            <input type="text" id="email" name="email" required>
+            <label for="description">Questions/Concerns: </label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <p id="formvisit" hidden></p>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <a href="index.html"><img src="image/logo.png" alt="Footer Logo"></a>
+            <div class="footerContact">
+                <h3>Contact Us</h3>
+                <p>123-4567-8910 | templeinnworldwide@123.com</p>
+                <h3>Company Address</h3>
+                <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
+            </div>
+            <div class="footerSocial">
+                <h3>Social Media</h3>
+                <div class="sns">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-square fa-2x"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube-square fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

@@ -12,12 +12,11 @@ fetch(requestURL)
     });
 
 function displayTemples(temple) {
-    console.log("sir");
     let card = document.createElement('section');
     let tname = document.createElement('h2');
     let tcountry = document.createElement('h3');
     let taddress = document.createElement('p');
-    let tphone = document.createElement('p');
+    let ttel = document.createElement('p');
     let temail = document.createElement('p');
     let tservices = document.createElement('p');
     let thistory = document.createElement('p');
@@ -29,7 +28,7 @@ function displayTemples(temple) {
     tname.textContent = `${temple.name}`;
     tcountry.textContent = `${temple.country}`;
     taddress.textContent = `${temple.address}`;
-    tphone.textContent = `${temple.phone}`;
+    ttel.textContent = `${temple.tel}`;
     temail.textContent = `${temple.email}`;
     tservices.textContent = `${temple.services}`;
     thistory.textContent = `${temple.history}`;
@@ -48,7 +47,7 @@ function displayTemples(temple) {
     card.appendChild(tname);
     card.appendChild(tcountry);
     card.appendChild(taddress);
-    card.appendChild(tphone);
+    card.appendChild(ttel);
     card.appendChild(temail);
     card.appendChild(tservices);
     card.appendChild(thistory);

@@ -32,19 +32,33 @@
             <button onclick="location.href='reserve.html'">Reserve</button>
         </div>
         <h1 class="homeLocations">Popular Locations</h1>
-        <div>
-            <picture>
-                <img src="" alt="">
-                <h3></h3>
-            </picture>
-            <picture>
-                <img src="" alt="">
-                <h3></h3>
-            </picture>
-            <picture>
-                <img src="" alt="">
-                <h3></h3>
-            </picture>
+        <div class="locationInfo">
+            <div class="weather">
+                <h1>Weather In Salt Lake City</h1>
+                <div class="weather-top">
+                    <img id="weathericon" alt="weather icon">
+                    <h2 id="temperature"></h1>
+                    <p>&#8457;</p>
+                </div>
+                <div class="weather-bottom">
+                    <h2 class="weather-condition"></h2>
+                    <div class="wind-speed">
+                        <p>Wind Speed: </p>
+                        <p id="current-speed"></p>
+                        <p>km/h</p>
+                    </div>
+                    <div class="wind-chill">
+                        <p>Wind Chill: </p>
+                        <p id="current-chill"></p>
+                        <p>&#8457;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple5.jpg" alt="popular location">
+                <h2>Salt Lake City</h2>
+                <h3>United States</h3>
+            </div>
         </div>
         <div class="announce">
             <h1>Announcements</h1>
@@ -68,6 +82,8 @@
             <div class="footerContact">
                 <h3>Contact Us</h3>
                 <p>123-4567-8910 | templeinnworldwide@123.com</p>
+                <h3>Company Address</h3>
+                <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814,+USA/@38.9832518,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
             </div>
             <div class="footerSocial">
                 <h3>Social Media</h3>
@@ -81,5 +97,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
 </body>
 </html>
