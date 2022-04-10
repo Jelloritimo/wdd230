@@ -1,0 +1,26 @@
+@media only screen and (min-width: 96rem) {
+
+    nav ul li a{
+        padding: .5rem 1rem;
+    }
+    
+    .mid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 10px;
+    }
+    
+
+    
+    .resize-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    }

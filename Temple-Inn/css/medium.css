@@ -29,7 +29,6 @@
         grid-column: 1/-1;
     }
     
-    /* Discover */
     
     .secondrow picture img, .sixthrow picture img{
         width: 95%;
@@ -47,7 +46,6 @@
         gap: 5px;
     }
     
-    /* Directory Page */
     .resize-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -58,7 +56,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
-    /* Contacts Page */
     .contacts{
         display: grid;
         grid-template-columns: 1fr 1fr;
